@@ -4,19 +4,15 @@
 body{
 background: #fafafa;
 }
-.main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 1360px;
-    background: white
-}
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1360px;
+        
+    }
+
 .introduction {
     padding-top: 76px;
     display: flex;
@@ -79,7 +75,10 @@ opacity: 0.5;
 
 }
 .column{
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .line{
@@ -143,13 +142,12 @@ padding: 1px 28px 0px 27px;
  letter-spacing: 0.25px;
 font-size: 36px;
     }
+    body{
+        height: 100vw;
+    }
     h2{
         letter-spacing: 0.25px;
         font-size: 36px;
-    }
-    .container{
-        gap: 60px;
-        background: #FAFAFA;
     }
     .information{
         width: 540px;
@@ -157,11 +155,14 @@ font-size: 36px;
     .four-card{
         width: 1110px;
         height: 530px;
-        /* gap: 60px
-        ; */
-         flex-direction: row; 
-         padding-top: 0px;
+        gap: 60px
+        ;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: row;
     }
+
     .cards3{
       margin: 30px 30px 0px 30px;
     }
